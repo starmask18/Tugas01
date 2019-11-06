@@ -24,27 +24,34 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000f;
-        public static final int btnhasil=0x7f080005;
-        public static final int btnhsl=0x7f08000c;
-        public static final int btnquiz1=0x7f080000;
-        public static final int btnquiz2=0x7f080001;
-        public static final int etnilaia=0x7f080003;
-        public static final int etnilaib=0x7f080004;
-        public static final int etnilaic=0x7f080009;
-        public static final int etnilaid=0x7f08000a;
-        public static final int etnilaie=0x7f08000b;
-        public static final int tvhasil=0x7f080006;
-        public static final int tvhsl=0x7f08000d;
-        public static final int tvquiz1=0x7f080002;
-        public static final int tvquiz2=0x7f080008;
-        public static final int tvquiza=0x7f080007;
-        public static final int tvquizb=0x7f08000e;
+        public static final int action_settings=0x7f080014;
+        public static final int btnhasil=0x7f08000a;
+        public static final int btnhsl=0x7f080011;
+        public static final int btnquiz1=0x7f080001;
+        public static final int btnquiz2=0x7f080002;
+        public static final int etnilaia=0x7f080008;
+        public static final int etnilaib=0x7f080009;
+        public static final int etnilaic=0x7f08000e;
+        public static final int etnilaid=0x7f08000f;
+        public static final int etnilaie=0x7f080010;
+        public static final int fakultas=0x7f080005;
+        public static final int lv=0x7f080000;
+        public static final int nama=0x7f080003;
+        public static final int nim=0x7f080004;
+        public static final int prodi=0x7f080006;
+        public static final int tvhasil=0x7f08000b;
+        public static final int tvhsl=0x7f080012;
+        public static final int tvquiz1=0x7f080007;
+        public static final int tvquiz2=0x7f08000d;
+        public static final int tvquiza=0x7f08000c;
+        public static final int tvquizb=0x7f080013;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int layout_quiz1=0x7f030001;
-        public static final int layout_quiz2=0x7f030002;
+        public static final int activity_quiz=0x7f030001;
+        public static final int layout_profil=0x7f030002;
+        public static final int layout_quiz1=0x7f030003;
+        public static final int layout_quiz2=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f070000;

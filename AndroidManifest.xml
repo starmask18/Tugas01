@@ -30,6 +30,14 @@
             android:name="com.example.tugas1.quiz2"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.example.tugas1.activityquiz"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tugas1.profil"
+            android:label="@string/app_name" >
+            </activity>
     </application>
 
 </manifest>

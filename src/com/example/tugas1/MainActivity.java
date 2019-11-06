@@ -5,35 +5,22 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class MainActivity extends Activity {
 
-	Button bquiz1;
-	Button bquiz2;
+	ListView lvmenu;
+	String[] menu = {"Profil" , "Quiz" , "Keluar"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bquiz1 =(Button)findViewById(R.id.btnquiz1);
-        bquiz1.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				Intent intest =new Intent(MainActivity.this,quiz1.class);
-				startActivity(intest);
-			}
-		});
-        bquiz2 =(Button)findViewById(R.id.btnquiz2);
-        bquiz2.setOnClickListener(new View.OnClickListener() {
-			
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				Intent intent =new Intent(MainActivity.this,quiz2.class);
-				startActivity(intent);
-			}
-		});
+        lvmenu = (ListView)findViewById(R.id.lv);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, menu);
+        lvmenu.setAdapter(adapter);
+        lvmenu.setOnItemClickListener(listClick);
     }
 
 
@@ -44,4 +31,22 @@ public class MainActivity extends Activity {
         return true;
     }
     
+    private AdapterView.OnItemClickListener listClick = new AdapterView.OnItemClickListener() {
+
+		@Override
+		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+				long arg3) {
+			// TODO Auto-generated method stub
+			if(arg2 == 0){
+				Intent intent = new Intent(MainActivity.this,profil.class);
+				startActivity(intent);
+			}else if(arg2 == 1){
+				Intent intent = new Intent(MainActivity.this,activityquiz.class);
+				startActivity(intent);
+			}else{
+				System.exit(arg2);
+			}
+		}
+    	
+	};
 }

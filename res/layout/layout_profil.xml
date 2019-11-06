@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <TextView 
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nama : Filbert"
+        />
+    <TextView 
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nim  : 183303030022"
+        android:layout_below="@+id/nama"
+        />
+    <TextView 
+        android:id="@+id/fakultas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fakultas : Teknologi dan Ilmu Komputer"
+        android:layout_below="@+id/nim"        
+        />
+    <TextView 
+        android:id="@+id/prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prodi : Teknik Informatika"
+        android:layout_below="@+id/fakultas"
+        />
+</LinearLayout>
